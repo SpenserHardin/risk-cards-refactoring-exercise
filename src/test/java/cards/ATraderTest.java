@@ -49,12 +49,6 @@ public class ATraderTest {
         }
 
         @Test
-        public void returnTrueForTrue() {
-
-            assertThat(false, is(true));
-        }
-
-        @Test
         public void returnsThreeWithHigherScore() {
             trader.getBestTrade(cards(INFANTRY, CANNON, INFANTRY, CAVALRY, INFANTRY), bestResult);
 
