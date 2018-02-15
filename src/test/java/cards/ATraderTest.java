@@ -18,7 +18,7 @@ import static cards.Card.CAVALRY;
 import static cards.Card.INFANTRY;
 import static cards.Card.WILDCARD;
 
-public class ATrader {
+public class ATraderTest {
     private Trader trader = new Trader();
     private Card[] bestResult;
 
@@ -46,6 +46,12 @@ public class ATrader {
             trader.getBestTrade(cards(INFANTRY, CANNON, INFANTRY, CANNON, INFANTRY), bestResult);
 
             assertThat(cardTypes(bestResult), is(asList(INFANTRY, INFANTRY, INFANTRY)));
+        }
+
+        @Test
+        public void returnTrueForTrue() {
+
+            assertThat(false, is(true));
         }
 
         @Test
